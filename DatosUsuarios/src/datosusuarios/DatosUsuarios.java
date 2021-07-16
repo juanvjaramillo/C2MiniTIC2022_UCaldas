@@ -19,10 +19,17 @@ public class DatosUsuarios {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        DatosVehiculo instClass = new DatosVehiculo();
-        System.out.println(instClass.informacion_vehiculo());
+        String nombre_formador = "Yaneth Mejía";
+        char genero = 'F';
+        int edad = 30;
         
-        instClass.informacion_vehiculo_m();
+        //Validar si el usuario es mayor de edad
+        if(edad > 17){
+            System.out.println(nombre_formador + " es Mayor de edad");
+        }else{
+            System.out.println(" es menor de edad");
+        }
+
     }
 
 }
