@@ -24,6 +24,11 @@ public class DatosVehiculo {
         return mensaje;
     }
     
+    // MÉTODO
+    /**
+     * Cuando se trabaja con métodos en Java
+     * se debe usar la palabra reservada void.
+     */
     public void informacion_vehiculo_m() {
         //Declarar variables a nivel local de la función
         String placa = "TIC022";
