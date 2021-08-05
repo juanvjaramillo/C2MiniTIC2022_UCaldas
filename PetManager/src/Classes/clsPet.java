@@ -29,7 +29,17 @@ public class clsPet {
         this.health_status = health_status;
     }
     
+    public void Eat() {
+        System.out.println("La mascota " + this.name + " esta comiendo.");
+    }
     
+    public void Move() {
+        System.out.println("La mascota " + this.name + " esta en movimiento.");
+    }
+    
+    public void Sound() {
+        System.out.println("La mascota "+ this.name + " esta produciendo algún sonido");
+    }
 
     /**
      * @return the code
