@@ -11,19 +11,37 @@ package datosusuario;
  */
 public class DatosUsuario {
 
-    //Atributos globales
-    String nombre = "";
-    int edad = 0;
-
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        // Instancia de la calse
-        DatosVehiculo instClass = new DatosVehiculo();
-        System.out.println(instClass.informacion_vehiculo());
-        instClass.informacion_vehiculo_m();
+        String nombre_formador = "Yaneth Mejía";
+        char genero = 'F';
+        int edad = 30;
+        boolean mujer = true;
+
+        //Validar si el usuario es mayor o menor de edad
+        if (edad >= 18) {
+            System.out.println(nombre_formador + " es mayor de edad.");
+        } else {
+            System.out.println(nombre_formador + " es menor de edad.");
+        }
+
+        //Validar que es mujer y es mayor de edad
+        if (genero == 'F' && edad > 17) {
+            System.out.println(nombre_formador + " es una mujer mayor de edad.");
+        } else {
+            System.out.println(nombre_formador + " no cumple alguna condición");
+        }
+
+        //Pregunta si es mujer utilizando la variable booleana
+        if (mujer == true) {
+            System.out.println(nombre_formador + " es mujer");
+        } else {
+            System.out.println(nombre_formador + " es hombre");
+        }
+
     }
 
 }

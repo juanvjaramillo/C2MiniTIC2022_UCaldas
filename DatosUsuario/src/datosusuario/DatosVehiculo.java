@@ -10,25 +10,17 @@ package datosusuario;
  * @author juanv
  */
 public class DatosVehiculo {
-    //Declaramos una función pública
-    //Tipo de datos que va a retornar sería un String
-    //Estructura: modificador_acceso tipo_dato_retorno nombre_funcion() {}
-
-    public String informacion_vehiculo() {
-        // Declarar variables a nivel local de la función
-        String placa = "TIC2022";
-        int modelo = 2021;
-        String marca = "MINITIC";
-        String mensaje = placa + " " + modelo + " " + marca;
-        //Retornamos u tipo String
-        return mensaje;
-    }
-
-    //Método: Cuando se trabaja con métodos en Java siempre se debe utilizar la palabra reservada Void
-    public void informacion_vehiculo_m() {
-        String placa = "TIC2022";
-        int modelo = 2021;
-        String marca = "MINITIC_Método";
-        System.out.println(placa + " " + modelo + " " + marca);
+    public static void main(String[] args) {
+        String marca_vehiculo = "Mazda", placa = "TIC202" ,color = "Rojo";
+        int modelo = 2011;
+        boolean renovo_soat = true;
+        
+        //Validar si el usuario no ha renovado el soat se le impone una multa
+        if (renovo_soat == false) {
+            int valor_multa = 600000;
+            System.out.println("¡Tome su multa!, el dueño del vehiculo con placas " + placa + " debe pagar COP$ " + valor_multa + ",00");
+        } else {
+            System.out.println("El vehiculo " + marca_vehiculo + " con placas " + placa + " tiene la documentacón al día!");
+        }
     }
 }
