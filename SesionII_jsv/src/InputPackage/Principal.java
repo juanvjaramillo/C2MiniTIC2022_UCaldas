@@ -29,7 +29,7 @@ public class Principal {
         System.out.println("Ingresa el número del documento: ");
         // Usuario ingresa números
         int nro_documento = entrada_usuario.nextInt();
-        inst_conductor.asignar_multa_f(nro_documento, nombre_conductor, infraccion);
+        System.out.println(inst_conductor.asignar_multa_f(nro_documento, nombre_conductor, infraccion));
         
     }
 

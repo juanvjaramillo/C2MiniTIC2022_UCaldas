@@ -4,9 +4,6 @@
  * and open the template in the editor.
  */
 package InputPackage;
-
-import sesionii_jsv.*;
-
 /**
  *
  * @author juanv
