@@ -32,5 +32,15 @@ public class Reto1_SemanaI {
         persona1.Sentir();
         persona1.Saborear();
         persona1.Ver();
+        
+                
+        clsPersona persona2 = new clsPersona("126547893", "CE", "Tod", "Restrepo Ramirez", 1.92, 85.8, "M", "hombre", "1958-11-03");
+        persona2.Correr();
+        
+        
+        clsPersona persona3;
+        persona3 = new clsPersona("32569874", "TI", "Laura", "Zuluaga Urasmetofh", 1.72, 63.2, "F", "Femenino", "1988-09-30");
+        persona3.Caminar();
+        persona3.Hablar();
     }   
 }
