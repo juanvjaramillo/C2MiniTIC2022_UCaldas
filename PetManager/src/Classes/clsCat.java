@@ -40,4 +40,12 @@ public class clsCat extends clsPet{
         this.breed = breed;
     }
     
+    @Override
+    public int getNumberOfBones() {
+        return 230;
+    }
+    
+    public String getAnimalType(){
+        return "Gato";
+    }
 }
