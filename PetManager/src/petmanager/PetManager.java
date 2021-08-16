@@ -5,7 +5,7 @@
  */
 package petmanager;
 
-import Classes.clsPet;
+import Classes.*;
 import java.util.Date;
 
 /**
@@ -22,15 +22,8 @@ public class PetManager {
 
         // Estructura de instancia de clases
         // tipoDato nombre_variable = new MetodoConstructor ();
-        clsPet pet1 = new clsPet();
-        pet1.setName("Firulais");
-        pet1.setBorn_year(2015);
-        pet1.setHealth_status("Sano");
-        pet1.setCode("001");
-        pet1.setColor("Negro");
-        pet1.setBreed("Criollo");
-
-        clsPet pet2 = new clsPet("001", "Minino", 2018, "Criollo", "Blanco y negro", "Enfermo");
+        clsDog pet1 = new clsDog("Criollo", false, "001", "Firulais", 2015, "Negro", "Sano");
+        clsCat pet2 = new clsCat("Angora", "001", "Minino", 2018, "Blanco y negro", "Enfermo");
 
         Date current_date = new Date();
         int current_year = current_date.getYear();
@@ -51,10 +44,12 @@ public class PetManager {
         }
 
         pet1.Eat();
-
         pet2.Eat();
         pet2.Move();
         pet2.Sound();
+        
+        pet1.WalkAround();
+        pet2.SelfCleaning();
     }
 
 }
