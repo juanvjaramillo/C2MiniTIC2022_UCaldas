@@ -45,7 +45,13 @@ public class Veterinaria_MITIC {
         System.out.println("");
         // String nombre_mascota, String fecha_nacimiento, String raza, boolean vacunas, boolean historial_clinico, int nro_documento_propietario
         MascotaConstructorGetterClass inst_mascota2 = new MascotaConstructorGetterClass("Donatello", dateFormat.format(fecha_actual),"Labrador", false, true, 999999);
-        System.out.println("\n\nFORMA II: Funciones Getter y constructor de la clase.\n     Nombre mascota: " + inst_mascota2.getNombre_mascota() + "\n     Fecha nacimiento: " + inst_mascota2.getFecha_nacimiento() + "\n     ¿Cuenta con historial clínico? " + inst_mascota2.isHistorial_clinico() + "\n     Número de documento del dueño: " + inst_mascota2.getNro_documento_propietario() + "\n     Vacunación al día?: " + inst_mascota2.isVacunas());       
-    }
-   
+        System.out.println("\n\nFORMA II: Funciones Getter y constructor de la clase.\n     Nombre mascota: " + inst_mascota2.getNombre_mascota() + "\n     Fecha nacimiento: " + inst_mascota2.getFecha_nacimiento() + "\n     ¿Cuenta con historial clínico? " + inst_mascota2.isHistorial_clinico() + "\n     Número de documento del dueño: " + inst_mascota2.getNro_documento_propietario() + "\n     Vacunación al día?: " + inst_mascota2.isVacunas());   
+        
+        //FORMA III: 
+        MascotaConstructorEncapsulamientoFuncionClass inst_mascota3 = new MascotaConstructorEncapsulamientoFuncionClass("Miguel Angel", dateFormat.format(fecha_actual), "Bull Terrier", true, true, 9999999);
+        inst_mascota3.consultar_informacion_mascota_m();
+        
+        System.out.println(inst_mascota3.consultar_informacion_mascota_f());
+        
+    }       
 }
