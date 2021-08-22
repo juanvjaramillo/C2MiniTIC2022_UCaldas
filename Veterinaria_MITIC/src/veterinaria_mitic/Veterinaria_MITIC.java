@@ -18,7 +18,7 @@ public class Veterinaria_MITIC {
      */
     public static void main(String[] args) {
         // Instanciamiento de las clases
-        MascotaClass inst_mascota = new MascotaClass();
+        MascotaEncapsulateFieldsClass inst_mascota = new MascotaEncapsulateFieldsClass();
             // Para trabajr con Date se debe importar java.util.Date
             // y se debe instanciar la clase como se hace a continuacion
         Date fecha_actual = new Date();
@@ -38,7 +38,14 @@ public class Veterinaria_MITIC {
         //inst_mascota.setVacunas(false);
         
         // Consultamos el valor de ciertas variables mediante la función GET del encapsulamiento de la clsse de origen.
-        System.out.println("Nombre mascota: " + inst_mascota.getNombre_mascota() + "\nFecha nacimiento: " + inst_mascota.getFecha_nacimiento() + "\n¿Cuenta con historial clínico? " + inst_mascota.isHistorial_clinico() + "\nNúmero de documento del dueño: " + inst_mascota.getNro_documento_propietario() + "\nVacunación al día?: " + inst_mascota.isVacunas());
+        System.out.println("FORMA I: Getter y Setter de variables. \n     Nombre mascota: " + inst_mascota.getNombre_mascota() + "\n     Fecha nacimiento: " + inst_mascota.getFecha_nacimiento() + "\n     ¿Cuenta con historial clínico? " + inst_mascota.isHistorial_clinico() + "\n     Número de documento del dueño: " + inst_mascota.getNro_documento_propietario() + "\n     Vacunación al día?: " + inst_mascota.isVacunas());
+        
+        
+        //FORMA II: 
+        System.out.println("");
+        // String nombre_mascota, String fecha_nacimiento, String raza, boolean vacunas, boolean historial_clinico, int nro_documento_propietario
+        MascotaConstructorGetterClass inst_mascota2 = new MascotaConstructorGetterClass("Donatello", dateFormat.format(fecha_actual),"Labrador", false, true, 999999);
+        System.out.println("\n\nFORMA II: Funciones Getter y constructor de la clase.\n     Nombre mascota: " + inst_mascota2.getNombre_mascota() + "\n     Fecha nacimiento: " + inst_mascota2.getFecha_nacimiento() + "\n     ¿Cuenta con historial clínico? " + inst_mascota2.isHistorial_clinico() + "\n     Número de documento del dueño: " + inst_mascota2.getNro_documento_propietario() + "\n     Vacunación al día?: " + inst_mascota2.isVacunas());       
     }
-    
+   
 }

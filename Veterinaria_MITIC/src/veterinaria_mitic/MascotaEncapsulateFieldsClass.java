@@ -10,7 +10,7 @@ package veterinaria_mitic;
  *
  * @author juanv
  */
-public class MascotaClass {
+public class MascotaEncapsulateFieldsClass {
     private String nombre_mascota;
     private String fecha_nacimiento; // En este caso debemos cambiar la fecha de int a String
     private String raza;
