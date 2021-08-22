@@ -12,7 +12,7 @@ package veterinaria_mitic;
  */
 public class MascotaClass {
     private String nombre_mascota;
-    private int fecha_nacimiento;
+    private String fecha_nacimiento; // En este caso debemos cambiar la fecha de int a String
     private String raza;
     private String color;
     private boolean vacunas;
@@ -20,8 +20,6 @@ public class MascotaClass {
     private boolean historial_clinico;
     private int nro_documento_propietario;
     
-    
-        
     /**
      * ENCAPSULAMENTO (Getter y Setter)
      * Get: Obtener o consultar el valor d euna variable (Función)
@@ -29,7 +27,7 @@ public class MascotaClass {
      * Forma I: Clic Secndario > Insert Code > Getter y Setter.
      * Forma II:Clic Secundario > Refactor> Encapsulate Fields
      */
-
+    
     /**
      * @return the nombre_mascota
      */
@@ -47,14 +45,14 @@ public class MascotaClass {
     /**
      * @return the fecha_nacimiento
      */
-    public int getFecha_nacimiento() {
+    public String getFecha_nacimiento() {
         return fecha_nacimiento;
     }
 
     /**
      * @param fecha_nacimiento the fecha_nacimiento to set
      */
-    public void setFecha_nacimiento(int fecha_nacimiento) {
+    public void setFecha_nacimiento(String fecha_nacimiento) {
         this.fecha_nacimiento = fecha_nacimiento;
     }
 
@@ -141,4 +139,5 @@ public class MascotaClass {
     public void setNro_documento_propietario(int nro_documento_propietario) {
         this.nro_documento_propietario = nro_documento_propietario;
     }
+    
 }

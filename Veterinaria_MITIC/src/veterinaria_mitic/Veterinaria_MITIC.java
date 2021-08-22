@@ -4,6 +4,8 @@
  * and open the template in the editor.
  */
 package veterinaria_mitic;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 /**
  *
@@ -20,15 +22,11 @@ public class Veterinaria_MITIC {
             // Para trabajr con Date se debe importar java.util.Date
             // y se debe instanciar la clase como se hace a continuacion
         Date fecha_actual = new Date();
-        
-        
-        
-        // Asignamos fecha actual como fecha de nacimiento.
-        final int ANNO_BASE = 1900; //Este año se usa como base para trabajar con la librería java.util.Date
-        //Date fecha_nacimiento = fecha_actual;
-        
+        //Se intancias las clases SimpleFormat("FormatoParametro"") como tipo DateFormat
+        DateFormat dateFormat = new SimpleDateFormat("yyyy"); // Se requiere el java.text para manejar este objeto
+
         //Ahora solo queremos obtener el año actual
-        int anno_actual = ANNO_BASE + (fecha_actual.getYear());
+        String anno_actual = dateFormat.format(fecha_actual);
         
         //Mediante las instancias llamamos los métodos SET del encapsulamiento para asignar valor
         inst_mascota.setNombre_mascota("Rocky");
