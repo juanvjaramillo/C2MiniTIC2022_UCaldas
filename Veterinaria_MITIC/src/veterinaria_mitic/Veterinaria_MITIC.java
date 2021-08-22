@@ -23,14 +23,14 @@ public class Veterinaria_MITIC {
             // y se debe instanciar la clase como se hace a continuacion
         Date fecha_actual = new Date();
         //Se intancias las clases SimpleFormat("FormatoParametro"") como tipo DateFormat
-        DateFormat dateFormat = new SimpleDateFormat("yyyy"); // Se requiere el java.text para manejar este objeto
+        DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy"); // Se requiere el java.text para manejar este objeto
 
-        //Ahora solo queremos obtener el año actual
-        String anno_actual = dateFormat.format(fecha_actual);
+        //Ahora solo queremos obtener la fecha con el foprmato creado
+        String fecha_nacimiento = dateFormat.format(fecha_actual);
         
         //Mediante las instancias llamamos los métodos SET del encapsulamiento para asignar valor
         inst_mascota.setNombre_mascota("Rocky");
-        inst_mascota.setFecha_nacimiento(anno_actual);
+        inst_mascota.setFecha_nacimiento(fecha_nacimiento);
         inst_mascota.setRaza("Golden");
         inst_mascota.setColor("Café");
         inst_mascota.setHistorial_clinico(true);
